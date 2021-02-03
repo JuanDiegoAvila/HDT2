@@ -14,7 +14,7 @@ public interface Stack<T> {
     /**
      * Metodo de tipo boolean que regresa true si esta vacio y false si tiene algun valor.
      * **/
-    public boolean Empty();
+    public boolean empty();
 
     /**
      * Metodo que regresa el tamaño del Stack Vector.
@@ -24,16 +24,16 @@ public interface Stack<T> {
     /**
      * Metodo que elimina el ultimo valor que se encuentra en el Stack y regresa dicho valor.
      * **/
-    public T Pop();
+    public T pop();
 
     /**
      * Metodo que agrega un elemento en la ultima posicion del Stack.
      * **/
-    public void Push(T num);
+    public void push(T num);
 
     /**
      * Metodo que regresa el valor del primer elemento del Stack.
      * **/
-    public T Peek();
+    public T peek();
 
 }

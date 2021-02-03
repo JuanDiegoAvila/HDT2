@@ -13,12 +13,12 @@ public class Calculadora implements CalculadoraGeneral{
 
     //revisa el tipo de operador y realiza la operacion indicada, regresando como string el resultado
 
-    public String Calculo(String texto){
+    public String Calculo(String expresion){
 
         int resultado = 0;
 
         //separa el String recibido para poder utilizar las dos variables y el operador.
-        String[] op = texto.split(",");
+        String[] op = expresion.split(",");
         int var1 = Integer.parseInt(op[0]);
         int var2 = Integer.parseInt(op[2]);
 

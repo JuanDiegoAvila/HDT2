@@ -20,7 +20,7 @@ public class StackVector<T> implements Stack<T>{
     }
 
     //regresa true si esta vacio y false si esta lleno
-    public boolean Empty(){
+    public boolean empty(){
         return vector.isEmpty();
     }
 
@@ -30,7 +30,7 @@ public class StackVector<T> implements Stack<T>{
     }
 
     //regresa el ultimo valor del stack.
-    public T Pop(){
+    public T pop(){
         //busca el ultimo elemento del vector.
         T valor = vector.get(vector.indexOf(vector.lastElement()));
         vector.remove(valor);
@@ -38,12 +38,12 @@ public class StackVector<T> implements Stack<T>{
     }
 
     //agrega el num al final del stack
-    public void Push(T num){
+    public void push(T num){
         vector.addElement(num);
     }
 
     //regresa el valor que esta al inicio del stack.
-    public T Peek(){
+    public T peek(){
 
         return vector.get(vector.indexOf(vector.firstElement()));
     }

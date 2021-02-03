@@ -14,5 +14,5 @@ public interface CalculadoraGeneral{
     /**
      * Metodo que recibe una cadena de texto y realiza la operacion indicada por el operando.
      * **/
-    public String Calculo(String texto);
+    public String Calculo(String expresion);
 }
