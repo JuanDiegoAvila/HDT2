@@ -1,7 +1,7 @@
 import java.io.File;
 import java.util.Scanner;
 /*
-    Juan Diego Avila Sastume     20090
+    Juan Diego Avila Sagastume     20090
     Hoja de trabajo 02, Calculadora.
 
     mainJD,

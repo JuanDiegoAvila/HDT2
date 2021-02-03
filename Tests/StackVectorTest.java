@@ -7,10 +7,10 @@ public class StackVectorTest {
     @Test
     public void pop() {
         StackVector<Integer> prueba = new StackVector<Integer>();
-        prueba.Push(1);
-        prueba.Push(2);
+        prueba.push(1);
+        prueba.push(2);
 
-        int resultado = prueba.Pop();
+        int resultado = prueba.pop();
 
         assertEquals(2, resultado);
     }

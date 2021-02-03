@@ -1,5 +1,5 @@
 /*
-    Juan Diego Avila Sastume     20090
+    Juan Diego Avila Saga+stume     20090
     Hoja de trabajo 02, Calculadora.
 
     Calculadora,
