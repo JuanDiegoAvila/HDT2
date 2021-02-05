@@ -9,9 +9,9 @@ public class CalculadoraTest {
     public void calculo() {
         Calculadora prueba = new Calculadora();
 
-        String operacion = "12,+,3"; //todas las operaciones se separan con , para ver operandos y operacion
+        String operacion = "1 2 +; //todas las operaciones se separan con , para ver operandos y operacion
         int resultado = Integer.parseInt(prueba.Calculo(operacion));
 
-        assertEquals(15,resultado);
+        assertEquals(3,resultado);
     }
 }
