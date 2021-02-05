@@ -22,6 +22,7 @@ public class mainJD{
         */
 
         String datos = "";
+        Calculadora calculadora = new Calculadora();
 
         try{
 
@@ -29,7 +30,10 @@ public class mainJD{
 
             //revisa si existen mas lineas dentro del texto.
             while (archivo.hasNextLine()){
-                datos += archivo.nextLine();
+                datos = archivo.nextLine();
+                String result = calculadora.Calculo(datos);
+
+        System.out.println("\n Resultado de  "+datos+" = "+Integer.parseInt(result));
             }
 
             archivo.close();
@@ -40,10 +44,8 @@ public class mainJD{
         }
 
 
-        Calculadora calculadora = new Calculadora();
-        String result = calculadora.Calculo(datos);
-
-        System.out.println("\n Resultado = "+Integer.parseInt(result));
+        
+        
 
     }
 
