@@ -39,42 +39,11 @@ public class mainJD{
 
         }
 
-        //crea un array de todos los datos que se leyeron en el documento
-        String [] operacion = datos.split(" ");
-        String calc = "";
-        int resultado = 0;
-        StackVector<Integer> calculo = new StackVector<Integer>();
+
         Calculadora calculadora = new Calculadora();
+        String result = calculadora.Calculo(datos);
 
-        //por cada elemento que se obtuvo del documento se revisa si es entero o no.
-        for (String op : operacion) {
-
-            if(Character.isDigit(op.charAt(0))){
-                calculo.push(Integer.parseInt(op)); // se inserta hasta el final del StackVector
-
-            }
-
-            else{ //si no es numero automaticamente lo considera como un operador
-
-
-                int var1 = calculo.pop();
-                int var2 = calculo.pop();
-
-                calc = var1+","+op+","+var2; //arma una cadena de texto con las variables y el operador en orden que fueron extraidos.
-
-                System.out.println("\nEstado : ");
-                System.out.println("\t"+var1+" "+op+" "+var2);
-
-                resultado = Integer.parseInt(calculadora.Calculo(calc)); //llama a clase calculadora y recibe un string, que luego convierte a entero.
-                calculo.push(resultado); //inserta el resultado hasta el final del StackVector.
-            }
-
-            if(calculo.empty()){
-                break;
-            }
-        }
-
-        System.out.println("\nResultado : "+calculo.peek()); //Regresa al ultimo valor, que deberia ser el resultado
+        System.out.println("\n Resultado = "+Integer.parseInt(result));
 
     }
 
