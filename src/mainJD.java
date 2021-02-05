@@ -33,7 +33,7 @@ public class mainJD{
                 datos = archivo.nextLine();
                 String result = calculadora.Calculo(datos);
 
-        System.out.println("\n Resultado de  "+datos+" = "+Integer.parseInt(result));
+                System.out.println("\n Resultado de  "+datos+" = "+Integer.parseInt(result));
             }
 
             archivo.close();
